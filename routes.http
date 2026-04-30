@@ -9,16 +9,16 @@ Content-type: application/json
 
 ###
 
-GET  http://localhost:3333/videos?search=node
+GET  http://localhost:3333/videos
 
 
 ###
 
-PUT http://localhost:3333/videos/49a7e370-8332-44c4-9027-0f602ef238cf
+PUT http://localhost:3333/videos/be8a8f41-4db1-4fbb-992d-678c364c7265
 Content-type: application/json
 
 {
-    "title": "My second Video",
+    "title": "My FUCKING VIDEO motherfucker!",
     "description": "This is a description of my first video.",
     "duration": 180
 }

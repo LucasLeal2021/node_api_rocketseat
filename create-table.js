@@ -1,12 +1,18 @@
 import sql from "./db.js";
 
-sql`
+/* sql`
+  DROP TABLE IF EXISTS videos;
+`.then(() => {
+  console.log("Tabela 'videos' removida com sucesso!");
+}); */
+
+ sql`
   CREATE TABLE videos (
-    id SERIAL PRIMARY KEY,
-    title TEXT NOT NULL,
+    id          TEXT PRIMARY KEY,
+    title       TEXT,
     description TEXT,
-    duration INTEGER
+    duration    INTEGER
   );
 `.then(() => {
   console.log("Tabela 'videos' criada com sucesso!");
-})
+}) 
